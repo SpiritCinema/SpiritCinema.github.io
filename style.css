@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ------ ОБНУЛЕНИЕ ------- */
+
+.text-wide {
+    width: 1142px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.links {
+    margin-left: 35%;
+    width: 50%;
+}
+
+.links a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin: 0 6%;
+}
+
+.wrapper h2 {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #333333;
+    margin-top: 3%;
+}
+
+.premier-slider {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.premier-item {
+    margin: 0 5%;
+    display: none;
+    height: 635px;
+}
+
+.premier-item img {
+    border-radius: 16px;
+}
+
+.premier-item h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #333333;
+    margin-top: 7%;
+}
+
+.ad-slider {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+img[alt='arrow-1'] {
+    position: relative;
+    left: 50px;
+}
+
+img[alt='arrow-2'] {
+    position: relative;
+    right: 50px;
+}
+
+.cinema-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cinema h6,
+.spirit-news h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin: 5% 0 2% 0;
+}
+
+.cinema p,
+.spirit-news p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #414A63;
+    margin-bottom: 3%;
+}
+
+.cinema-item img {
+    border-radius: 16px;
+}
+
+.cinema-item h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-top: 10%;
+}
+
+.news-item h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin: 4% 0;
+}
+
+.news-item p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A637A;
+    margin: 0;
+}
+
+.news {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    border: 1px solid #333D58;
+    padding: 2% 3%;
+    margin-top: 5%;
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news-item {
+    margin-right: 2%;
+}
+
+.news-item img {
+    border-radius: 16px;
+    margin-bottom: 10%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 3%;
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-list a {
+    margin-right: 10%;
+}
+
+footer h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin: 7% 0 10% 0;
+}
+
+footer a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin-top: 15%;
+}
+
+.info {
+    margin-left: 5%;
+}
+
+.social {
+    margin-left: 30%;
+}
+
+.info-link {
+    white-space: nowrap;
+    margin: 2% 0;
+}
+
+hr {
+    margin: 7% 0 3% 0;
+}
+
+img[alt='glossy'] {
+    right: 0;
+    top: 170px;
+    position: absolute;
+}
+
+img[alt='second-glossy'] {
+    left: 0;
+    top: 650px;
+    position: absolute;
+}
+
+.ad-item {
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ellipse-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 90%;
+    width: 50px;
+}
+
+.ellipse {
+    width: 10px;
+    height: 10px;
+    background: rgba(116, 98, 98, 0.3);
+    border-radius: 90px;
+    margin: 0 3%;
+}
+
+.active-ellipse {
+    background: #746262;
+}
